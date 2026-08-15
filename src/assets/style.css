@@ -1,0 +1,178 @@
+  :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #4cc9f0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary) !important;
+        }
+        .product-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            height: 100%;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .product-img {
+            height: 200px;
+            object-fit: cover;
+            background-color: #e9ecef;
+        }
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+        }
+        .cart-icon {
+            position: relative;
+        }
+        .cart-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+        }
+        .section-title {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--primary);
+        }
+        .footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 2rem 0;
+        }
+        .footer a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: white;
+        }
+        .price {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.25rem;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 4rem 0;
+        }
+        .hero-text {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+        }
+        .category-btn {
+            background-color: white;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            border-radius: 50px;
+            margin: 0.25rem;
+            padding: 0.5rem 1.5rem;
+            transition: all 0.3s;
+        }
+        .category-btn:hover, .category-btn.active {
+            background-color: var(--primary);
+            color: white;
+        }
+        .rating {
+            color: #ffc107;
+        }
+        @media (max-width: 768px) {
+            .hero-section {
+                text-align: center;
+            }
+        }
+ 
+.image-container {
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+}
+.image-container:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+.product-image {
+  max-height: 450px;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+.image-container:hover .product-image {
+  transform: scale(1.03);
+}
+
+.product-info {
+  border: 1px solid #f0f0f0;
+}
+
+.quantity-selector {
+  max-width: 200px;
+}
+
+.quantity-display {
+  min-width: 40px;
+}
+
+.btn-outline-secondary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.badge {
+  font-weight: 500;
+  padding: 0.45em 0.8em;
+}
+
+@media (max-width: 768px) {
+  .product-image {
+    max-height: 350px;
+  }
+  
+  .product-info {
+    margin-top: 1.5rem;
+  }
+  
+  .quantity-selector {
+    max-width: 100%;
+  }
+}        
