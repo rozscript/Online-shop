@@ -1,53 +1,55 @@
-<template> <!-- Footer -->
+<template>
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h5 class="text-white mb-4">ShopSimple</h5>
-                    <p>Quality products at affordable prices. We believe everyone deserves access to great products
-                        without breaking the bank.</p>
-                    <div class="social-icons">
-                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-white"><i class="bi bi-pinterest"></i></a>
+            <div class="row g-4">
+                <div class="col-lg-4 mb-3 mb-lg-0">
+                    <h5 class="text-white mb-3">
+                        <i class="bi bi-bag-heart-fill me-2"></i>ShopSimple
+                    </h5>
+                    <p class="mb-3">Quality products at affordable prices. We believe everyone deserves access to great products without breaking the bank.</p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
-                    <h5 class="text-white mb-4">Shop</h5>
+                <div class="col-lg-2 col-md-4 mb-3 mb-md-0">
+                    <h5 class="text-white mb-3">Shop</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">All Products</a></li>
-                        <li class="mb-2"><a href="#">New Arrivals</a></li>
-                        <li class="mb-2"><a href="#">Best Sellers</a></li>
-                        <li class="mb-2"><a href="#">Sale Items</a></li>
+                        <li><a href="#">All Products</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Sale Items</a></li>
                         <li><a href="#">Gift Cards</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
-                    <h5 class="text-white mb-4">Company</h5>
+                <div class="col-lg-2 col-md-4 mb-3 mb-md-0">
+                    <h5 class="text-white mb-3">Company</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">About Us</a></li>
-                        <li class="mb-2"><a href="#">Careers</a></li>
-                        <li class="mb-2"><a href="#">Press</a></li>
-                        <li class="mb-2"><a href="#">Blog</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
                         <li><a href="#">Affiliates</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <h5 class="text-white mb-4">Contact Us</h5>
+                    <h5 class="text-white mb-3">Contact Us</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> 123 Commerce St, New York, NY</li>
-                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> (123) 456-7890</li>
-                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> support@shopsimple.com</li>
+                        <li><i class="bi bi-geo-alt me-2"></i> 123 Commerce St, New York, NY</li>
+                        <li><i class="bi bi-telephone me-2"></i> (123) 456-7890</li>
+                        <li><i class="bi bi-envelope me-2"></i> support@shopsimple.com</li>
                     </ul>
                     <div class="mt-4">
-                        <div v-if="showSuccess" class="alert alert-success mt-4" role="alert">
+                        <div v-if="showSuccess" class="alert alert-success mt-3" role="alert">
                             <i class="bi bi-check-circle-fill me-2"></i>
-                            Thank you! Your {{email}} has been sent subscribed.
+                            Thank you! Your {{email}} has been subscribed.
                         </div>
-                        <h6 class="text-white">Subscribe to our newsletter</h6>
+                        <h6 class="text-white mb-2">Subscribe to our newsletter</h6>
                         <div class="input-group">
-                            <input type="email" class="form-control" v-model="email" placeholder="Your email">
+                            <input type="email" class="form-control" v-model="email" placeholder="Enter your email">
                             <button class="btn btn-primary" @click="subscribeBtn" type="button">Subscribe</button>
                         </div>
                     </div>
@@ -55,7 +57,7 @@
             </div>
             <hr class="mt-5 mb-4 bg-light bg-opacity-25">
             <div class="text-center">
-                <p class="mb-0">© 2025 ShopSimple. All rights reserved.</p>
+                <p class="mb-0 text-white-50">&copy; 2025 ShopSimple. All rights reserved.</p>
             </div>
         </div>
     </footer>
